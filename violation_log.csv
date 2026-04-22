@@ -1,0 +1,4 @@
+frame,timestamp_sec,type,class,confidence
+200,16.67,Zebra Crossing Violation,car,0.45
+550,45.83,Zebra Crossing Violation,car,0.33
+550,45.83,Zebra Crossing Violation,bus,0.3
