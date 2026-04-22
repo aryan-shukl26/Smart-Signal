@@ -1,4 +1,1 @@
-.venv/
-__pycache__/
-*.pyc
-*.log
+*.mp4\n*.avi\n*.pt\nruns/\nSmart-Signal/
