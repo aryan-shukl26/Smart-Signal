@@ -1,0 +1,16 @@
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="4.5" maxSpeed="13.89"/>
+    <vType id="emergency" accel="2.6" decel="4.5" sigma="0.0" length="5.0" maxSpeed="22.22" color="1,0,0"/>
+
+    <flow id="north_south" type="car" from="north_in" to="south_out" begin="0" end="3600" vehsPerHour="300"/>
+    <flow id="south_north" type="car" from="south_in" to="north_out" begin="0" end="3600" vehsPerHour="300"/>
+    <flow id="east_west"   type="car" from="east_in"  to="west_out"  begin="0" end="3600" vehsPerHour="200"/>
+    <flow id="west_east"   type="car" from="west_in"  to="east_out"  begin="0" end="3600" vehsPerHour="200"/>
+
+    <vehicle id="ambulance_1" type="emergency" depart="100" departLane="best">
+        <route edges="north_in south_out"/>
+    </vehicle>
+    <vehicle id="ambulance_2" type="emergency" depart="500" departLane="best">
+        <route edges="east_in west_out"/>
+    </vehicle>
+</routes>
